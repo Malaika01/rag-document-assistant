@@ -2,10 +2,18 @@ import os
 from dotenv import load_dotenv
 from groq import Groq
 from retriever import retrieve_chunks
+import streamlit as st
+
 
 load_dotenv()
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+def get_api_key():
+    try:
+        return st.secrets["GROQ_API_KEY"]
+    except Exception:
+        return os.getenv("GROQ_API_KEY")
+
+client = Groq(api_key=get_api_key())
 MODEL = "llama-3.1-8b-instant"  # fast & free, can upgrade to llama-3.1-70b
 
 # ── Build Prompt ─────────────────────────────────────
