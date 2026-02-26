@@ -101,8 +101,6 @@ rag-document-assistant/
 ---
 
 ## 📸 Demo
-
->![Screenshot](screenshot.png)
-> 
+https://rag-document-assistant-gobu9uhuurk6jph7hyfcjo.streamlit.app/ 
 
 ---
