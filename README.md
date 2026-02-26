@@ -102,7 +102,7 @@ rag-document-assistant/
 
 ## 📸 Demo
 
-> (screenshot.png)
+>![Screenshot](screenshot.png)
 > 
 
 ---
